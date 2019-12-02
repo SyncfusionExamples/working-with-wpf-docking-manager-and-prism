@@ -1,0 +1,59 @@
+﻿<UserControl x:Class="SolutionExplorer.SolutionExplorerView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SolutionExplorer"
+        mc:Ignorable="d" xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        syncfusion:DockingManager.Header="SolutionExplorer" syncfusion:DockingManager.State="Dock" syncfusion:DockingManager.DesiredWidthInDockedMode="250"
+           syncfusion:DockingManager.SideInDockedMode="Right" d:DesignHeight="300" d:DesignWidth="200">
+    <Grid>
+        <syncfusion:TreeViewAdv 
+						  ShowRootLines="False" 
+						  LineBrush="Black"
+						  SelectedValuePath="Header" 
+                          AnimationType="None">
+            <syncfusion:TreeViewItemAdv IsExpanded="True" Header="Solution 'TestTreeViewAdv' (3 projects)" LeftImageSource="Images/Solution.png" >
+
+                <syncfusion:TreeViewItemAdv IsExpanded="true" Header="DockingStudioDemo" LeftImageSource="Images/Project.png">
+                    <syncfusion:TreeViewItemAdv Header="Properties" IsExpanded="True" 
+								  ExpandedImageSource="Images/References_Expanded.png"
+								  CollapsedImageSource="Images/Properties_Collapsed.png" >
+                        <syncfusion:TreeViewItemAdv Header="AssemblyInfo.cs" LeftImageSource="Images/CSharp.png" />
+                        <syncfusion:TreeViewItemAdv Header="Resources.resx" LeftImageSource="Images/Resources.png" >
+                            <syncfusion:TreeViewItemAdv Header="Resources.cs" LeftImageSource="Images/Linked.png" />
+                        </syncfusion:TreeViewItemAdv>
+                        <syncfusion:TreeViewItemAdv Header="Settings.settings" LeftImageSource="Images/Settings.png" >
+                            <syncfusion:TreeViewItemAdv Header="Settings.cs" LeftImageSource="Images/Linked.png" />
+                        </syncfusion:TreeViewItemAdv>
+                    </syncfusion:TreeViewItemAdv>
+                    <syncfusion:TreeViewItemAdv Header="References"  IsExpanded="True" 
+								  ExpandedImageSource="Images/References_Expanded.png"
+								  CollapsedImageSource="Images/References_Collapsed.png" >
+                        <syncfusion:TreeViewItemAdv Header="Syncfusion.Shared.WPF" LeftImageSource="Images/Project.png" />
+                        <syncfusion:TreeViewItemAdv Header="Syncfusion.Tools.WPF" LeftImageSource="Images/Project.png" />
+                        <syncfusion:TreeViewItemAdv Header="PresentationCore" LeftImageSource="Images/Reference.png" />
+                        <syncfusion:TreeViewItemAdv Header="PresentationFramework" LeftImageSource="Images/Reference.png" />
+                        <syncfusion:TreeViewItemAdv Header="ReachFramework" LeftImageSource="Images/Reference.png" />
+                        <syncfusion:TreeViewItemAdv Header="System" LeftImageSource="Images/Reference.png" />
+                        <syncfusion:TreeViewItemAdv Header="System.Data" LeftImageSource="Images/Reference.png" />
+                        <syncfusion:TreeViewItemAdv Header="System.Xml" LeftImageSource="Images/Reference.png" />
+                    </syncfusion:TreeViewItemAdv>
+                    <syncfusion:TreeViewItemAdv Header="Images" IsExpanded="True" 
+								  ExpandedImageSource="Images/Folder_Expanded.png"
+								  CollapsedImageSource="Images/Folder_Collapsed.png" >
+                        <syncfusion:TreeViewItemAdv Header="Solution.png" LeftImageSource="Images/Image.png" />
+                        <syncfusion:TreeViewItemAdv Header="Project.png" LeftImageSource="Images/Image.png" />
+                        <syncfusion:TreeViewItemAdv Header="Reference.png" LeftImageSource="Images/Image.png" />
+                    </syncfusion:TreeViewItemAdv >
+                    <syncfusion:TreeViewItemAdv IsExpanded="True"   Header="App.xaml" LeftImageSource="Images/Xaml.png" >
+                        <syncfusion:TreeViewItemAdv Header="App.xaml.cs" LeftImageSource="Images/CSharp.png" />
+                    </syncfusion:TreeViewItemAdv>
+                    <syncfusion:TreeViewItemAdv  IsExpanded="True"  Header="Window1.xaml" LeftImageSource="Images/Xaml.png" >
+                        <syncfusion:TreeViewItemAdv Header="Window1.xaml.cs" LeftImageSource="Images/CSharp.png" />
+                    </syncfusion:TreeViewItemAdv>
+                </syncfusion:TreeViewItemAdv>
+            </syncfusion:TreeViewItemAdv>
+        </syncfusion:TreeViewAdv>
+    </Grid>
+</UserControl>
