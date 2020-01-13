@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BAE62520-2C53-492F-AF17-0DBB68301876}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SolutionExplorer</RootNamespace>
+    <AssemblyName>SolutionExplorer</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CommonServiceLocator, Version=2.0.4.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\PrismTutorial\packages\CommonServiceLocator.2.0.4\lib\net45\CommonServiceLocator.dll</HintPath>
+    </Reference>
+    <Reference Include="Prism, Version=7.1.0.431, Culture=neutral, PublicKeyToken=40ee6c3a2184dc59, processorArchitecture=MSIL">
+      <HintPath>..\PrismTutorial\packages\Prism.Core.7.1.0.431\lib\net45\Prism.dll</HintPath>
+    </Reference>
+    <Reference Include="Prism.Unity.Wpf, Version=7.1.0.431, Culture=neutral, PublicKeyToken=40ee6c3a2184dc59, processorArchitecture=MSIL">
+      <HintPath>..\PrismTutorial\packages\Prism.Unity.7.1.0.431\lib\net45\Prism.Unity.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Prism.Wpf, Version=7.1.0.431, Culture=neutral, PublicKeyToken=40ee6c3a2184dc59, processorArchitecture=MSIL">
+      <HintPath>..\PrismTutorial\packages\Prism.Wpf.7.1.0.431\lib\net45\Prism.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Shared.WPF, Version=14.1460.0.46, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Syncfusion\Essential Studio\14.1.0.46\precompiledassemblies\14.1.0.46\4.5.1\Syncfusion.Shared.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Tools.WPF, Version=17.3450.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Syncfusion\Essential Studio\WPF\17.3.0.14\Assemblies\4.5\Syncfusion.Tools.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\PrismTutorial\packages\Prism.Wpf.7.1.0.431\lib\net45\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="Unity.Abstractions, Version=3.3.1.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\PrismTutorial\packages\Unity.Abstractions.3.3.1\lib\net45\Unity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Container, Version=5.8.11.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\PrismTutorial\packages\Unity.Container.5.8.11\lib\net45\Unity.Container.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SolutionExplorerView.xaml.cs">
+      <DependentUpon>SolutionExplorerView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SolutionExplorerModule.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="SolutionExplorerView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bgimage.jpg" />
+    <Resource Include="Images\Border.png" />
+    <Resource Include="Images\Button.png" />
+    <Resource Include="Images\Canvas.png" />
+    <Resource Include="Images\CheckBox.png" />
+    <Resource Include="Images\ClassView.png" />
+    <Resource Include="Images\ComboBox.png" />
+    <Resource Include="Images\ContentControl.png" />
+    <Resource Include="Images\CSharp.png" />
+    <Resource Include="Images\DockPanel.png" />
+    <Resource Include="Images\DocumentViewer.png" />
+    <Resource Include="Images\Ellipse.png" />
+    <Resource Include="Images\ErrorList.png" />
+    <Resource Include="Images\Expander.png" />
+    <Resource Include="Images\FindResults.png" />
+    <Resource Include="Images\FindSymbolResults.png" />
+    <Resource Include="Images\Folder_Collapsed.png" />
+    <Resource Include="Images\Folder_Expanded.png" />
+    <Resource Include="Images\Frame.png" />
+    <Resource Include="Images\Grid.png" />
+    <Resource Include="Images\GridSplitter.png" />
+    <Resource Include="Images\GroupBox.png" />
+    <Resource Include="Images\icon.png" />
+    <Resource Include="Images\Image.png" />
+    <Resource Include="Images\Label.png" />
+    <Resource Include="Images\Linked.png" />
+    <Resource Include="Images\ListBox.png" />
+    <Resource Include="Images\ListView.png" />
+    <Resource Include="Images\MediaElement.png" />
+    <Resource Include="Images\Menu.png" />
+    <Resource Include="Images\Output.png" />
+    <Resource Include="Images\PasswordBox.png" />
+    <Resource Include="Images\Pointer.png" />
+    <Resource Include="Images\ProgressBar.png" />
+    <Resource Include="Images\Project.png" />
+    <Resource Include="Images\Properties.png" />
+    <Resource Include="Images\Properties_Collapsed.png" />
+    <Resource Include="Images\RadioButton.png" />
+    <Resource Include="Images\Rectangle.png" />
+    <Resource Include="Images\Reference.png" />
+    <Resource Include="Images\References_Collapsed.png" />
+    <Resource Include="Images\References_Expanded.png" />
+    <Resource Include="Images\Resources.png" />
+    <Resource Include="Images\RichTextBox.png" />
+    <Resource Include="Images\ScrollBar.png" />
+    <Resource Include="Images\ScrollViewer.png" />
+    <Resource Include="Images\Separator.png" />
+    <Resource Include="Images\Settings.png" />
+    <Resource Include="Images\Slider.png" />
+    <Resource Include="Images\Solution.png" />
+    <Resource Include="Images\StackPanel.png" />
+    <Resource Include="Images\StatusBar.png" />
+    <Resource Include="Images\TabControl.png" />
+    <Resource Include="Images\TextBlock.png" />
+    <Resource Include="Images\TextBox.png" />
+    <Resource Include="Images\ToolBar.png" />
+    <Resource Include="Images\Toolbox.png" />
+    <Resource Include="Images\TransparentBackground.jpg" />
+    <Resource Include="Images\TreeView.png" />
+    <Resource Include="Images\UniformGrid.png" />
+    <Resource Include="Images\ViewBox.png" />
+    <Resource Include="Images\WindowsFormsHost.png" />
+    <Resource Include="Images\WrapPanel.png" />
+    <Resource Include="Images\Xaml.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

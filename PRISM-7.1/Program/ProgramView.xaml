@@ -1,0 +1,26 @@
+﻿<UserControl x:Class="Program.ProgramView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d"  xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+             syncfusion:DockingManager.Header="Program.cs" syncfusion:DockingManager.State="Document"
+             d:DesignHeight="300" d:DesignWidth="200">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <TextBlock Text="using System;"/>
+            <TextBlock Text="using System.Windows;"/>
+            <TextBlock Text="using System.Windows.Controls;"/>
+            <TextBlock Text="using System.Windows.Data;"/>
+            <TextBlock Text="using System.Text;"/>
+            <TextBlock Text=""/>
+            <TextBlock Text="namespace Program"/>
+            <TextBlock Text=" {"/>
+            <TextBlock Text="     public class MyProgram"/>
+            <TextBlock Text="     {"/>
+            <TextBlock Text=""/>
+            <TextBlock Text="     }"/>
+            <TextBlock Text=" }"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

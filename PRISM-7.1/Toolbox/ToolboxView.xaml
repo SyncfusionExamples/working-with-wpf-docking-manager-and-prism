@@ -1,0 +1,69 @@
+﻿<UserControl x:Class="Toolbox.ToolboxView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Toolbox"
+        mc:Ignorable="d" xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        syncfusion:DockingManager.Header="Toolbox" syncfusion:DockingManager.State="AutoHidden" syncfusion:DockingManager.DesiredWidthInDockedMode="250"
+           syncfusion:DockingManager.SideInDockedMode="Left" d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+     <syncfusion:GroupBar 
+						 VisualMode="MultipleExpansion" 
+						 HorizontalAlignment="Stretch" 
+						 VerticalAlignment="Stretch">
+        <syncfusion:GroupBarItem HeaderText="General" IsSelected="True">
+            <TextBlock Text="There are no usable controls in this group." TextAlignment="Center"  TextWrapping="Wrap"/>
+        </syncfusion:GroupBarItem>
+        <syncfusion:GroupBarItem HeaderText="Containers" IsExpanded="True">
+            <syncfusion:GroupView>
+                    <syncfusion:GroupViewItem Text="Pointer" ImageSource="Images/pointer.png" />
+                    <syncfusion:GroupViewItem Text="Canvas" ImageSource="Images/Canvas.png" />
+                    <syncfusion:GroupViewItem Text="DockPanel" ImageSource="Images/DockPanel.png" />
+                    <syncfusion:GroupViewItem Text="StackPanel" ImageSource="Images/StackPanel.png" />
+                    <syncfusion:GroupViewItem Text="WrapPanel" ImageSource="Images/WrapPanel.png" />
+                    <syncfusion:GroupViewItem Text="Grid" ImageSource="Images/Grid.png" />
+            </syncfusion:GroupView>
+        </syncfusion:GroupBarItem>
+        <syncfusion:GroupBarItem HeaderText="Controls" IsExpanded="True">
+            <syncfusion:GroupView >
+                <syncfusion:GroupViewItem Text="Pointer" ImageSource="Images/pointer.png" />
+                    <syncfusion:GroupViewItem Text="Border" ImageSource="Images/Border.png" />
+                    <syncfusion:GroupViewItem Text="Button" ImageSource="Images/Button.png" />
+                    <syncfusion:GroupViewItem Text="CheckBox" ImageSource="Images/CheckBox.png" />
+                    <syncfusion:GroupViewItem Text="Combobox" ImageSource="Images/Combobox.png" />
+                    <syncfusion:GroupViewItem Text="ContentControl" ImageSource="Images/ContentControl.png" />
+                    <syncfusion:GroupViewItem Text="DocumentViewer" ImageSource="Images/DocumentViewer.png" />
+                    <syncfusion:GroupViewItem Text="Ellipse" ImageSource="Images/Ellipse.png" />
+                    <syncfusion:GroupViewItem Text="Expander" ImageSource="Images/Expander.png" />
+                    <syncfusion:GroupViewItem Text="Frame" ImageSource="Images/Frame.png" />
+                    <syncfusion:GroupViewItem Text="GridSplitter" ImageSource="Images/GridSplitter.png" />
+                    <syncfusion:GroupViewItem Text="GroupBox" ImageSource="Images/GroupBox.png" />
+                    <syncfusion:GroupViewItem Text="Label" ImageSource="Images/Label.png" />
+                    <syncfusion:GroupViewItem Text="Listbox" ImageSource="Images/Listbox.png" />
+                    <syncfusion:GroupViewItem Text="Listview" ImageSource="Images/Listview.png" />
+                    <syncfusion:GroupViewItem Text="MediaElement" ImageSource="Images/MediaElement.png" />
+                    <syncfusion:GroupViewItem Text="Menu" ImageSource="Images/Menu.png" />
+                    <syncfusion:GroupViewItem Text="PasswordBox" ImageSource="Images/PasswordBox.png" />
+                    <syncfusion:GroupViewItem Text="ProgressBar" ImageSource="Images/ProgressBar.png" />
+                    <syncfusion:GroupViewItem Text="RadioButton" ImageSource="Images/RadioButton.png" />
+                    <syncfusion:GroupViewItem Text="Rectangle" ImageSource="Images/Rectangle.png" />
+                    <syncfusion:GroupViewItem Text="RichTextBox" ImageSource="Images/RichTextBox.png" />
+                    <syncfusion:GroupViewItem Text="ScrollBar" ImageSource="Images/ScrollBar.png" />
+                    <syncfusion:GroupViewItem Text="ScrollViewer" ImageSource="Images/ScrollViewer.png" />
+                    <syncfusion:GroupViewItem Text="Separator" ImageSource="Images/Separator.png" />
+                    <syncfusion:GroupViewItem Text="Slider" ImageSource="Images/Slider.png" />
+                    <syncfusion:GroupViewItem Text="StatusBar" ImageSource="Images/StatusBar.png" />
+                    <syncfusion:GroupViewItem Text="TabControl" ImageSource="Images/TabControl.png" />
+                    <syncfusion:GroupViewItem Text="TextBox" ImageSource="Images/TextBox.png" />
+                    <syncfusion:GroupViewItem Text="TextBlock" ImageSource="Images/TextBlock.png" />
+                    <syncfusion:GroupViewItem Text="ToolBar" ImageSource="Images/ToolBar.png" />
+                    <syncfusion:GroupViewItem Text="TreeView" ImageSource="Images/TreeView.png" />
+                    <syncfusion:GroupViewItem Text="UniformGrid" ImageSource="Images/UniformGrid.png" />
+                    <syncfusion:GroupViewItem Text="ViewBox" ImageSource="Images/ViewBox.png" />
+                    <syncfusion:GroupViewItem Text="WindowsFormsHost" ImageSource="Images/WindowsFormsHost.png" />
+            </syncfusion:GroupView>
+        </syncfusion:GroupBarItem>
+    </syncfusion:GroupBar> 
+    </Grid>
+</UserControl>
